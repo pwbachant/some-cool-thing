@@ -22,3 +22,10 @@ pipeline:
       outputs:
         - pubs/paper-2/paper.pdf
       target_path: pubs/paper-2/paper.tex
+datasets:
+  - path: data/data.h5
+    title: Nice data
+    description: It was collected.
+    created_by:
+      - email: pwbachant@gmail.com
+        name: pwbachant
