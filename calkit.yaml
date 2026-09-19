@@ -4,3 +4,21 @@ title: Some cool thing
 description: ''
 hub: http://localhost:5173
 git_repo_url: https://github.com/pwbachant/some-cool-thing
+publications:
+  - path: pubs/paper-2/paper.pdf
+    kind: conference-paper
+    title: This is paper 2
+    stage: build-paper-2
+environments:
+  tex:
+    kind: docker
+    image: texlive/texlive:latest-full
+    description: TeXlive full.
+pipeline:
+  stages:
+    build-paper-2:
+      kind: latex
+      environment: tex
+      outputs:
+        - pubs/paper-2/paper.pdf
+      target_path: pubs/paper-2/paper.tex
