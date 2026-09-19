@@ -29,3 +29,5 @@ datasets:
     created_by:
       - email: pwbachant@gmail.com
         name: pwbachant
+references:
+  - path: references.bib
